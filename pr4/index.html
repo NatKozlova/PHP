@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Выборка</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div align="center" width="1000">
+            <form method="post">
+                <lable>URL: </lable>
+                <input type="text" name="url" value="<? if(isset($_POST['url'])) echo $_POST['url']; ?>"/>
+                <br>
+                <lable>Pattern: </lable>
+                <select name="action">
+                    <option value="0">Название авто</option>
+                </select>
+                <br>
+                <lable>Значение: </lable>
+                <input type="text" name="val" />
+                <input type="submit" value="GO" />
+            </form>
+        </div>
+        <div align="center" width="1000">
+            <code>
+                <?
+                    if(!isset($_POST['url']) && isset($_POST['action'])) echo '<b>Вы не указали ссылку.</b>';
+                    else if(!isset($_POST['val']) && isset($_POST['action'])) echo '<b>Вы не указали искомое слово.</b>';
+                    else
+                    {
+
+                    }
+                ?>
+            </code>
+        </div>
+    </body>
+</html>

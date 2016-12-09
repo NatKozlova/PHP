@@ -1,0 +1,25 @@
+body
+{
+ background-color: #BEF7EB;
+}
+.yclovie
+{
+	margin-top: 50px;
+  text-align: center;
+  margin-top: 40px;
+}
+.rezyltat
+{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 25px;
+}
+input, select
+{
+  font-size: 40px;
+}
+p
+{
+  text-align: center;
+  font-size: 20px;
+}
